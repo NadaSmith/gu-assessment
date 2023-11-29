@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/gu-assessment/static/css/main.809f2cc4.css",
+    "main.js": "/gu-assessment/static/js/main.d5c0bc4d.js",
+    "static/js/787.de239a7d.chunk.js": "/gu-assessment/static/js/787.de239a7d.chunk.js",
+    "index.html": "/gu-assessment/index.html",
+    "main.809f2cc4.css.map": "/gu-assessment/static/css/main.809f2cc4.css.map",
+    "main.d5c0bc4d.js.map": "/gu-assessment/static/js/main.d5c0bc4d.js.map",
+    "787.de239a7d.chunk.js.map": "/gu-assessment/static/js/787.de239a7d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.809f2cc4.css",
+    "static/js/main.d5c0bc4d.js"
+  ]
+}
