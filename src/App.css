@@ -44,6 +44,8 @@ main {
   display: flex; 
 }
 
+/*======== Main-FilteredSidebar ========*/
+
 .filteredsidebar {
   padding: 20px; 
   margin-left: 10px;
@@ -146,6 +148,8 @@ hr {
   width: 20px;
   margin-right: 10px;
 }
+
+/*======== Main-AttendeeList ========*/
 
 .attendee-list {
   flex: 0 0 75%; 
