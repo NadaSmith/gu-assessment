@@ -1,38 +1,215 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Futura PT', sans-serif;
+  color: midnightblue;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
+}
+
+.App {
+  max-width: 1200px; 
+  margin: 0 auto; 
+}
+
+/*======== Header ========*/
+
+.header {
+  background-color: midnightblue; 
+  padding: 20px; 
+  padding-left: 40px;
+  text-align: left; 
+  width: 110%;
+}
+
+.logo {
+  max-width: 100%; 
+  height: auto; 
+}
+
+h1 {
+  margin-top: 1em;
+  text-align: center;
+  font-family: 'Adobe Caslon', serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 60px;
+}
+
+/*======== Main ========*/
+
+main {
+  display: flex; 
+}
+
+.filteredsidebar {
+  padding: 20px; 
+  margin-left: 10px;
+}
+
+.filteredsidebar h2 {
+  font-family: 'Adobe Caslon', serif;
+  font-weight:300;
+  margin-top: 0;
+  font-size: 30px;
+}
+
+.name-label {
+  font-family: 'Futura PT', sans-serif;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.input-container {
+  position: relative;
+  padding-top: 5px;
+}
+
+.input {
+  height: 60px;
+  width: 95%;
+}
+
+.magnifying-glass {
+  position: absolute;
+  top: 25px;
+  right: 40px;
+  cursor: pointer;
+}
+
+hr {
+  margin-right: 10px;
+}
+
+.school-label {
+  font-family: 'Futura PT', sans-serif;
+  font-weight: bolder;
+}
+
+.school-checkbox {
+  display: flex;
+  flex-direction: row;
+  padding-top: 15px;
+  padding-bottom: 25px;
+}
+
+.college-label, .law-label {
+  font-family: 'Futura PT', sans-serif;
+  font-weight:lighter;
+  display: flex;
+  flex-direction: row;
+  padding-right: 62px;
+}
+
+
+.school-input {
+  height: 15px;
+  width: 20px;
+  margin-right: 10px;
+}
+
+.registration-status {
+  font-family: 'Futura PT', sans-serif;
+  font-weight: bolder;
+}
+
+.register-checkbox {
+  display: flex;
+  flex-direction: row;
+  padding-top: 15px;
+  width: 100%;
+}
+
+.registered, .not-registered {
+  font-family: 'Futura PT', sans-serif;
+  font-weight:lighter;
+  display: flex;
+  flex-direction: row;
+}
+
+.registered {
+  padding-right: 30px;
+  margin-right: 10px;
+}
+
+.not-registered {
+  width: 150px;
+  margin-right: 30px;
+}
+
+.registered-input {
+  height: 15px;
+  width: 20px;
+  margin-right: 10px;
+}
+
+.attendee-list {
+  flex: 0 0 75%; 
+  padding-top: 85px; 
+}
+
+.attendee-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 20px;
+  justify-content: center; 
   align-items: center;
+  margin: 20px; 
+}
+
+.attendee-box {
+  border: 1px solid black;
+  height: 120px; 
+  display: flex;
+  flex-direction: column;
+  padding-top: 0px;
+  padding-left: 20px;
+  font-size: 20px;
+}
+
+.school-year {
+  padding-top: 25px;
+  padding-bottom: 5px;
+  font-size: small;
+  font-weight: lighter;
+}
+
+.attendee-name {
+  font-size: larger;
+  font-family: 'Adobe Caslon', serif;
+  padding-bottom: 10px;
+}
+
+.registered-status {
+  font-size: medium;
+  font-weight: bold;
+}
+
+/*======== Footer ========*/
+
+.footer { 
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.text-footer {
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
+  display:flex;
 }
 
-.App-link {
-  color: #61dafb;
+.text-footer p {
+  margin: 2em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.img-footer {
+  background-color: midnightblue;
+  text-align: right;
+  padding-right: 10px;
+  padding: 10px;
 }
