@@ -10,7 +10,7 @@ const AttendeeList = ({ attendees }) => {
           <div className='attendee-box' key={index}>
             <div className='school-year'>{attendee.school_year}</div>
             <div className='attendee-name'>{attendee.first_name} {attendee.last_name} </div>
-            <div className='registered-status'>{attendee.registered}</div>
+            <div className='registered-status'>{attendee['registered-status']}</div>
           </div>
         ))}
       </div>
