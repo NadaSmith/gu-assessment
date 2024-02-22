@@ -203,11 +203,13 @@ hr {
   width: 110%;
 }
 
+/*
 .footer { 
   position: fixed;
   bottom: 0;
   width: 100%;
 }
+*/
 
 .text-footer {
   justify-content: center;
